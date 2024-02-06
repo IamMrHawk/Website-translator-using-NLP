@@ -9,7 +9,6 @@ Webpage Translator is a versatile Python tool designed for translating webpages 
 - **Model Options:**
   - **MBart:** Offers accurate translations with moderate resource requirements.
   - **TowerBase:** Provides enhanced accuracy, demanding a more substantial GPU or RAM.
-  - **HTML Content Translation:** Preserves the structure and attributes of HTML tags during the translation process.
 
 - **File and URL Input:** Supports both local HTML files and webpages accessed via URLs for translation.
 
