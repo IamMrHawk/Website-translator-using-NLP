@@ -24,3 +24,46 @@ Webpage Translator is a versatile Python tool designed for translating webpages 
     - Execute the main script, providing either a directory containing HTML files (**dir_path**) or a file with URLs (**url_file**).
 4. **Output:**
     - Translated webpages will be saved in the specified output directory.
+
+### Examples
+#### Translate HTML Files in a Directory
+```
+language = 'spanish'
+input_language = 'English'
+output_dir = 'path/to/output'
+model_name = 'MBart'  # or 'TowerBase'
+
+translator = WebpageTranslator(input_language=input_language, output_language=language)
+
+main = TranslateWebpages(
+    translator=translator,
+    language=language,
+    output_dir=output_dir,
+    model_name=model_name,
+    input_language=input_language
+)
+```
+
+#### Translate Webpages from URLs
+```
+language = 'spanish'
+input_language = 'English'
+output_dir = 'path/to/output'
+model_name = 'MBart'  # or 'TowerBase'
+url_file = 'path/to/url_file.txt'
+
+translator = WebpageTranslator(input_language=input_language, output_language=language)
+
+main = TranslateWebpages(
+    translator=translator,
+    language=language,
+    output_dir=output_dir,
+    model_name=model_name,
+    input_language=input_language,
+    get_url=True,
+    url_file=url_file
+)
+```
+### Dependencies
+  - [Beautiful Soup 4 (bs4)](https://pypi.org/project/beautifulsoup4/)
+  - [Hugging Face Transformers](https://huggingface.co/docs/transformers/en/index)
