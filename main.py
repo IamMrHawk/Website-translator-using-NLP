@@ -101,13 +101,12 @@ class TranslateWebpages:
 
 
 if __name__ == '__main__':
-        
         # get translation language code
         # Input/Output Languages : English, Portuguese, Spanish, French, German, Dutch, Italian, Korean, Chinese, Russian
-        language = 'spanish'
-        input_language = 'English'
-        output_dir = 'C:\Users\UE\Documents\Python Scripts\output'
-        model_name = 'MBart' # or 'TowerBase'        
+        language = ''
+        input_language = ''
+        output_dir = ''
+        model_name = '' # 'MBart' or 'TowerBase'        
 
         translator = WebpageTranslator(input_language=input_language, output_language=language)
 
