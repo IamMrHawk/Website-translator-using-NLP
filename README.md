@@ -27,8 +27,8 @@ Webpage Translator is a versatile Python tool designed for translating webpages 
 ### Examples
 #### Translate HTML Files in a Directory
 ```
-language = 'spanish'
-input_language = 'English'
+language = '' # mention output language
+input_language = '' # mention input language
 output_dir = 'path/to/output'
 model_name = 'MBart'  # or 'TowerBase'
 
@@ -45,8 +45,8 @@ main = TranslateWebpages(
 
 #### Translate Webpages from URLs
 ```
-language = 'spanish'
-input_language = 'English'
+language = '' # mention output language
+input_language = '' # mention input language
 output_dir = 'path/to/output'
 model_name = 'MBart'  # or 'TowerBase'
 url_file = 'path/to/url_file.txt'
